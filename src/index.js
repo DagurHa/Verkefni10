@@ -9,8 +9,8 @@ function finnaCoords() {
     coordPos.textContent = '';
   
     function success(position) {
-      const { latitude } = position.coords.latitude;
-      const { longitude } = position.coords.longitude;
+      const { latitude } = position.coords;
+      const { longitude } = position.coords;
       takki.classList.add('hidden');
       status.textContent = '';
       mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
